@@ -137,12 +137,12 @@ if DEBUG == False:
 else:
     STATIC_ROOT = os.path.join(BASE_DIR.parent, 'static')
 
-STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/' if DEBUG == False else '/static/'
+# STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/' if DEBUG == False else '/static/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/' if DEBUG == False else '/media/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR.parent, 'staticfiles/'),
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR.parent, 'staticfiles/'),
+# ]
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
